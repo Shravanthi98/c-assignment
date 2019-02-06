@@ -2,7 +2,8 @@
 #include<math.h>
 int main()
 {
-  int n,rem,temp,x;
+  int n,temp,x;
+long int rem;
 printf("Enter a number");
 scanf("%d",&n);
 temp=n;
@@ -26,8 +27,8 @@ temp=temp/2;
 rem=rem*10+x;
 }
 }
-printf("%d\n",rem);
-int bin;
+printf("%ld\n",rem);
+long int bin;
 bin=rem;
 int j=0,k=0,i;
 while(bin!=0)
@@ -37,6 +38,7 @@ while(bin!=0)
  bin=bin/10;                 
 k++;
 }
-printf("%d",j);
+printf("%d\n",j);
+printf("%lX\n",j);
 return 0;
 }
